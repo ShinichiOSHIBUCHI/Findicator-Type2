@@ -1,0 +1,146 @@
+@charset "utf-8";
+* {
+	font-family: 'Noto Sans CJK JP';
+}
+
+h2 {
+    color: #326693;			/* 見出しテキストの色を指定する */
+  padding-left:10px;		/* ボックス内左側の余白を指定する */
+  border-left: 10px solid #31a9ee;	/* ボーダー左側のスタイルを指定する */
+    border-bottom: 1px dashed #31a9ee; 	/* ボーダー下部のスタイルを指定する */
+}
+
+.card {
+  display: flex;
+  position: relative;
+  width: calc(100% - 10px);
+  height: 100px;
+  border: 1px;
+  border-radius: 8px;
+  border-color: gray;
+  box-shadow: 0 4px 15px rgba(0,0,0,.6);
+  margin: 15px 5px;
+}
+
+.link_contents {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px; 
+  margin: 10px;
+  background: transparent url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2014.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%2043363%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%26%23x30EC%3B%26%23x30A4%3B%26%23x30E4%3B%26%23x30FC%3B_1%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2280px%22%20height%3D%2280px%22%0A%09%20viewBox%3D%220%200%2080%2080%22%20style%3D%22enable-background%3Anew%200%200%2080%2080%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Ccircle%20style%3D%22fill%3A%2331A9EE%3B%22%20cx%3D%2240%22%20cy%3D%2240%22%20r%3D%2240%22/%3E%0A%3C/svg%3E') no-repeat 50% 50%;
+}
+
+.icon p {
+  color: #fff;
+  text-align: center;
+}
+
+.card_right_parent {
+  position: relative;
+  padding: 5px 10px 5px 5px;
+  width: calc(100% - 120px);
+}
+.card_right, .narrative_top{
+  display: flex;
+  height: 1.5em;
+  width: 100%;
+}
+
+.title .summary {
+  margin: 2px;
+}
+.title, .narrative_top_title{
+  width: 75%
+}
+.title p,
+.narrative_top_title p{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.rate, .narrative_rate{
+  position: relative;
+  top:0;
+  right: 0%;
+}
+.rate p,
+.contents_rate p {
+  color: #ffa500;
+  margin: 5px;
+}
+
+.summary {
+  padding-left: 0.5em;
+}
+
+.narrative_date {
+  position: relative;
+  top: -7px;
+  }
+.narrative_date p {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.narrative_detail {
+  margin: 5px;
+}
+.narrative_table_frame table {
+  width: calc(100% - 80px);
+  border-collapse:collapse;
+}
+.narrative_table_frame table td{
+  height: 20px;
+}
+.narrative_table_frame table th{
+  background-color:lightgray;
+}
+.narrative_table {
+  margin: auto;
+}
+
+.contents_top {
+  display: flex;
+  height: 2em;
+  margin: 10px 5px;  
+}
+.contents_title {
+  position: relative;
+  width: 75%;
+  top: -16px;
+}
+.contents_title p{
+  font-size: 20px;
+}
+.contents_rate {
+  position: relative;
+  width: 25%;
+  text-align:right;
+}
+.contents_detail_upper {
+  margin: 5px;
+}
+.contents_under {
+  display: flex;
+}
+.contents_detail_under,
+.contents_figure {
+  width: 50%;
+  margin: 5px;
+}
+.contents_figure,
+.current_page {
+  text-align: center;
+}
+.current_page {
+  margin: 5px;
+}
